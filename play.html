@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="play.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <title>Undefeatable game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.min.js"></script>
+</head>
+<body>
+    <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button
+        {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+    <div class="main">
+        <p id="instruction"> Select bar, enter the value you want 
+            to decrease and click PLAY
+        </p>
+        <canvas id="myChart"></canvas>
+        <div id="inp">
+            <input type="number" id="numInput">
+            <button id="submit">PLAY</button>
+        </div>
+    </div>
+    <script src="play.js"></script>
+</body>
+</html>

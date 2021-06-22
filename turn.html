@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="turn.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">  
+    <title>Undefeatable Game</title>
+</head>
+<body>
+    <div class="main">
+        <div class="main_heading">
+            <h1>The Undefeatable Game</h1>
+        </div>
+        <div class="input">
+            <label for="quantity" class="quan">Number of piles:</label>
+            <select class="value" name="value">
+                <option value=5>5</option>
+                <option value=6>6</option>
+                <option value=7>7</option>
+                <option value=8>8</option>
+                <option value=9>9</option>
+                <option value=10>10</option>
+              </select>
+        </div>
+    </div>
+    <div class="button">
+        <button class="b1">PLAY FIRST</button>
+        <button class="b2">PLAY SECOND</button>
+    </div>
+    <script>
+        
+        document.getElementsByClassName("b1")[0].onclick = function () 
+        {
+            var n = document.getElementsByClassName("value")[0].value;
+            location.href = "play.html?"+"n="+n+"&typ=1";
+        };
+        document.getElementsByClassName("b2")[0].onclick = function () 
+        {
+            var n = document.getElementsByClassName("value")[0].value;
+            location.href = "play.html?"+"n="+n+"&typ=2";
+        };
+    </script>
+</body>
+</html>

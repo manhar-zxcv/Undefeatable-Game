@@ -1,0 +1,74 @@
+body,html
+{
+    height: 100%;
+}
+.main
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    background-image: url(background.png);
+    background-size: 10%;
+}
+
+.main_heading
+{
+    margin-left: 5%;
+    font-size: 2vw;
+}
+.button
+{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-image: url(background.png);
+    background-size: 10%;
+}
+.b1
+{
+    font-size: 3vw;
+    height: 15%;
+    width: 30%;
+    margin-right: 5%;
+    background-color: rgb(17,240,232);
+    border-width: 0;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.b2
+{
+    font-size: 3vw;
+    height: 15%;
+    width: 30%;
+    margin-left: 5%;
+    background-color: rgb(17,240,232);
+    border-width: 0;
+    cursor: pointer;
+    margin-top: 5%;
+}
+.b1:hover
+{
+    font-weight: bold;
+}
+.b2:hover
+{
+    font-weight: bold;
+}
+.input
+{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.quan
+{
+    font-size: 2vw;
+    font-weight: bold;
+}
+.value
+{
+    margin-left: 2%;
+}

@@ -1,0 +1,44 @@
+body,html
+{
+    height: 100%;
+}
+.main
+{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(background.png);
+    background-size: 10%;
+}
+#myChart
+{
+    max-width: 50%;
+    max-height: 50%;
+}
+#inp
+{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#numInput
+{
+    width: 4%;
+    margin-right: 2%;
+}
+#instruction
+{
+    margin-top: -5%;
+    padding-top: 0%;
+    font-size: 2vw;
+    font-weight: bolder;
+}
+#submit
+{
+    background-color: rgb(17,240,232);
+    border-width: 0;
+    cursor: pointer;
+}
