@@ -28,6 +28,7 @@ body,html
 {
     width: 4%;
     margin-right: 2%;
+    font-size: 1.5vw;
 }
 #instruction
 {
@@ -41,4 +42,9 @@ body,html
     background-color: rgb(17,240,232);
     border-width: 0;
     cursor: pointer;
+    font-size: 2vw;
+}
+#submit:hover
+{
+    font-weight: bold;
 }

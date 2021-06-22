@@ -76,8 +76,12 @@ var myChart = new Chart(canvas.getContext('2d'),
         scales: {
             yAxes:[{
                 display: true,
-                ticks: {suggestedMin:0,suggestedMax:15}
-        }]},
+                ticks: {
+                    suggestedMin:0,
+                    suggestedMax:15,
+                    fontSize:20,
+                    fontStyle:"bold"
+        }}]},
         title:{display:false},
         legend: {display:false},
         events: ['click'], onClick: function(e)
@@ -147,19 +151,27 @@ function computerTurn()
 
 function playUserTurn()
 {
-    var dec = document.getElementById("numInput").value;
+    var dec = Number(document.getElementById("numInput").value);
     var barValues = myChart.data.datasets[0].data;
     if (barIndex == -1)
     {
         alert("Select a bar");
+        document.getElementById("numInput").value = "";
     }
-    else if (dec == "")
+    else if (dec == NaN)
     {
         alert("Enter value");
+        document.getElementById("numInput").value = "";
+    }
+    else if (Number.isInteger(dec) == false || dec <= 0)
+    {
+        alert("Enter positive integer value");
+        document.getElementById("numInput").value = "";
     }
     else if (barValues[barIndex] < dec)
     {
         alert("Chosen value cannot be greater than bar value");
+        document.getElementById("numInput").value = "";
     }
     else
     {
