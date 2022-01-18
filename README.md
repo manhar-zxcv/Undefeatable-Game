@@ -39,7 +39,7 @@ To get a local copy up and running follow the steps given below.
 
 1. Clone the repository.
 ```sh
-git clone https://github.com/tehlka/Expense-Tracker.git
+git clone https://github.com/tehlka/Undefeatable-Game.git
 ```
 2. Run index.html
 
